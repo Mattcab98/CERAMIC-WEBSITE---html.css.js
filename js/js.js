@@ -1,3 +1,15 @@
+// PRELOADER WEB SITE
+
+let loader = document.querySelector(".loader");
+
+window.addEventListener("load", function (){
+    this.setTimeout(vanish,3000);
+});
+
+function vanish() {
+    loader.classList.add("disppear")
+}
+
 // HERO - SLIDER 
 
 const slider = document.querySelector("#slider");
