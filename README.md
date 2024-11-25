@@ -16,10 +16,9 @@ Este proyecto es un sitio web diseñado para una empresa de cerámica, desarroll
    
 2. **Productos**:
    - Galería interactiva de productos de cerámica con efectos de hover.
-   - Implementación de un modal con JavaScript para ampliar imágenes de productos al hacer clic.
 
 3. **Servicios**:
-   - Listado de servicios ofrecidos, con efectos de deslizamiento cuando el usuario hace scroll.
+   - Listado de servicios ofrecidos, con efectos de deslizamiento.
    - Integración de íconos para mejorar la comprensión visual.
 
 4. **Contacto**:
@@ -28,7 +27,7 @@ Este proyecto es un sitio web diseñado para una empresa de cerámica, desarroll
 
 ## Animaciones con JavaScript
 
-- **Deslizamiento de elementos**: Se utiliza para que el contenido aparezca desde los lados al hacer scroll.
+- **Deslizamiento de elementos**: Se utiliza para que el contenido aparezca desde los lados.
   ```javascript
   const elements = document.querySelectorAll('.slide-in');
   window.addEventListener('scroll', () => {
