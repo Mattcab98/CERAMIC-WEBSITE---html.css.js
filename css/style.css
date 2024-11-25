@@ -1,0 +1,278 @@
+* {
+    --color-1: #121212;
+    --color-2: #745747;
+    --color-3: #FFF3E6;
+    --color-4: #F2EDE4;
+    --color-5: #BBB9AF;
+    --color-6: #E6E0D4;
+    --color-7: #fff;
+    --font-family-primary: 'tinos';
+    --font-family-secondary: 'poppins' ;
+    
+    font-family: var(--font-family-primary);
+}
+
+/* style a */
+
+
+.navbar__responsive a, .container__navbar-desktop a, .container__icon a, .nav__footer-a {
+    text-decoration: none;
+    color: var(--color-1);
+    font-weight: 500;
+}
+
+/* header-nav */
+
+
+.nav {
+    background-color: var(--color-7);
+    justify-content: space-between;
+    position: relative;
+    padding: 15px;
+}
+
+/* header-logo */
+
+#logo {
+    width: 200px;
+    padding-top: 10px;
+}
+
+/* nav-navbar */
+
+/* navbar - DESKTOP */
+
+.container__navbar-desktop {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* nav-bar icon */
+
+.container__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5em;
+}
+
+/* navbar - RESPONSIVE */
+
+.container__btnResponsive {
+    display: grid;
+    place-content: center;
+    position: relative;
+    top: 2.5px;
+}
+
+.btn__headerResponsive {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: 1.3em;
+}
+
+.container__navbar__responsive {
+    position: absolute;
+    background-color: var(--color-7);
+    top: 75px;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar__responsive {
+    /* cambiar display  */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    gap: 15px;
+    padding-right: 30px;
+}
+
+/* navbar responsive - navbar desktop HOVER */
+
+.container__navbar a:hover, .navbar__responsive a:hover, .btn__headerResponsive:hover, .a__navbar:hover, .nav__footer-a:hover {
+    color: var(--color-2);
+    scale: 1.1;
+    transition: .5s;
+}
+
+.background__hero {
+    background-image: url(/img/fondoHero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat ;
+    height: 60vh;
+    transition: background-size .6s ease, height .6s ease;
+    text-align: center;
+}
+
+.hero {
+    font-size: 1em;
+    color: var(--color-7);
+}
+
+.container__hero {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn__hero {
+    font-family: var(--font-family-secondary);
+    font-weight: 500;
+    background-color: var(--color-1);
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about__me {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.about__me h3 {
+    font-size: 1.2em;
+}
+
+.about__me a {
+    color: blue;
+    text-decoration: none;
+    font-family: inherit;
+    padding: 10px;
+}
+
+.fondoColorGallery {
+    background-color: var(--color-4);
+}
+
+.gallery__txt {
+    padding: 50px;
+    text-align: center;
+}
+
+.container__card {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 100px;
+}
+
+.img__giftCard img{
+    border-radius: 20px;
+}
+
+.container__giftCard {
+    margin: 50px;
+}
+
+.container__txt-giftCard {
+    text-align: start;
+    padding: 50px;
+}
+
+.container__contact {
+    width: 90%;
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: var(--color-4);
+}
+
+.footer1, .footer2 {
+    padding: 20px;
+}
+
+.container__nav-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.container__inputEmail-footer {
+    display: flex;
+}
+
+.input__mail-footer {
+    border: 1px solid var(--color-5);
+    border-radius: 5px 0px 0px 5px;
+    width: 170px;
+    background-color: transparent;
+}
+
+.btn-mail-footer {
+    border-radius: 0px 40px 40px 0px;
+}
+
+.text__validacion {
+    color: gray;
+    font-size: .9em;
+    padding-top: 10px;
+}
+
+.footer2 {
+    text-align: start;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.footer2 i {
+    font-size: 2em;
+}
+
+.footer2__grupo2 {
+    padding-top: 50px;
+}
+
+@media (min-width:768px) {
+
+    .btn__headerResponsive, .container__navbar__responsive {
+        display: none;
+    }
+
+    .container__navbar-desktop {
+        display: flex;
+    }
+
+    .background__hero {
+        transition: background-size .6s ease, height .6s ease;
+        text-align: start;
+    }
+
+    .hero {
+        font-size: 1.2em;
+    }
+
+    .btn__hero {
+        width: 60%;
+        font-size: .65em;
+    }
+
+    .container__contact {
+        width: 70%;
+    }
+
+    .footer2__grupo2 {
+        padding-top: 0px;
+    }
+}
+
+
+@media (min-width:980px) {
+    .btn__hero {
+        width: 40%;
+    }
+
+    .container__contact {
+        max-width: 50%;
+    }
+    
+    .footer2 {
+        text-align: start;
+    }
+}

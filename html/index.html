@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Proyecto - Matias Alvarez</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="matias alvarez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+
+
+    <!-- FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    </style>
+
+
+    <!--
+
+    col-md-: Mediano (pantallas ≥ 768px).
+    col-sm-: Pequeño (pantallas ≥ 576px).
+    col-xl-: Extra grande (pantallas ≥ 1200px).
+    col-lg-: Grande (pantallas ≥ 992px).
+    col-xxl-: Extra extra grande (pantallas ≥ 1400px)
+
+    -->
+</head>
+
+<body>
+    
+    <header class="header">
+
+        <div class="container">
+            <nav class="nav row">
+
+                <!-- logo empresa  -->
+
+                <div class="container__logo col-6 col-md-3">
+                    <a href="index.html"><img src="/img/Logo.jpg" alt="" id="logo"></a>
+                </div>
+
+                <!-- navbar desktop  -->
+
+                <div class="container__navbar-desktop col-md-6">
+                    <a href="#" class="a__navbar">CLASSES</a>
+                    <a href="#" class="a__navbar">MEMBERSHIPS</a>
+                    <a href="#" class="a__navbar">MORE</a>
+                </div>
+
+                <!-- contenedor de iconos responsive-desktop -->
+
+                <div class="container__icon col-6 col-md-3">
+                    <a href="#" class="a__navbar"><i class="bi bi-search"></i></a>
+                    <a href="#" class="a__navbar"><i class="bi bi-person"></i></a>
+                    <a href="#" class="a__navbar"><i class="bi bi-cart3"></i></a>
+                    <div class="container__btnResponsive">
+                        <button type="button" class="btn__headerResponsive" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#id">
+                            <i class="bi bi-list"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- navbar responsive (vinculado al button) -->
+
+                <!-- <div class="container__navbar__responsive" id="id">
+                    <div class="navbar__responsive">
+                        <a href="#" class="a__navbar">CLASSES</a>
+                        <a href="#" class="a__navbar">MEMBERSHIPS</a>
+                        <a href="#" class="a__navbar">MORE</a>
+                        <a href="#" class="a__navbar">---------</a>
+                        <a href="#" class="a__navbar">---------</a>
+                        <a href="#" class="a__navbar">---------</a>
+                        <a href="#" class="a__navbar">---------</a>
+                        <a href="#" class="a__navbar">---------</a>
+                        <a href="#" class="a__navbar">---------</a>
+                        <a href="#" class="a__navbar">---------</a>
+                    </div>
+                </div> -->
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="background__hero">
+            <div class="container">
+                <div class="row container__hero">
+                    <section class="hero col-12 col-md-6">
+                        <h1 class="h1__hero">A pottery studio dedicated to creativity and community.</h1>
+                        <button class="btn__hero btn btn-dark">TAKE A CLASS</button>
+                    </section>
+                </div>
+            </div>    
+        </div>
+        
+        <section class="container__about container" id="about">
+            <div class="row about__me">
+                <h3>Sarah Glass Ceramics is a woman-owned pottery studio based in Fort Lauderdale, Florida. We offer
+                    pottery classes for beginners and experienced artists alike, providing a supportive and creative
+                    environment to explore the art of pottery making. Our studio space offers equipment and expert
+                    guidance to help you channel your inner artist.</h3>
+                <a href="#">LEARN MORE</a>
+            </div>
+            <div class="row container__img-about">
+                <div class="col-12 col-md-6"><img src="/img/chica.webp" alt=""></div>
+                <div class="col-12 col-md-6"><img src="/img/bibliotecaBarro.webp" alt=""></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="fondoColorGallery">
+                <div class="container container__gallery">
+                    <div class="row gallery__txt">
+                        <h2>Featured Classes, Courses & Workshops</h2>
+                        <p>Whether you're looking to learn wheel-throwing, hand-building, or just unwind through clay, we
+                            have a class for you.</p>
+                    </div>
+    
+                    <div class="row container__card">
+                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                            <img src="/img/card1.jpg" class="card-img-top" style="height: 250px;object-fit: cover;"
+                                alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                            <img src="/img/card2.webp" class="img__card2" style="height: 250px;object-fit: cover;"
+                                alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                            <img src="/img/card6.jpg" class="card-img-top" style="height: 250px;object-fit: cover;"
+                                alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="row container__card">
+                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                            <img src="/img/card1.jpg" class="card-img-top" style="height: 250px;object-fit: cover;"
+                                alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                            <img src="/img/card2.webp" class="img__card2" style="height: 250px;object-fit: cover;"
+                                alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                            <img src="/img/card6.jpg" class="card-img-top" style="height: 250px;object-fit: cover;"
+                                alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                    of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container mt-5 container__contact">
+                <h1 class="text-center">Formulario de Contacto</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container-fluid">
+        <div class="container fot">
+            <div class="footer1 row">
+                <div class="footer1__grupo1 col-12 col-md-6">
+                    <p class="logo-txt">Sarah Glass Ceramics</p>
+                    <div class="container__nav-footer">
+                        <a href="#" class="nav__footer-a">ABOUT</a>
+                        <a href="#" class="nav__footer-a">PRESS</a>
+                        <a href="#" class="nav__footer-a">FAQ</a>
+                        <a href="#" class="nav__footer-a">CONTACT</a>
+                    </div>
+                </div>
+    
+                <div class="footer1__grupo2 col-12 col-md-6">
+                    <div class="container__inputEmail-footer">
+                        <input type="email" name="" id="input-main-footer" class="input__mail-footer">
+                        <button type="button" class="btn btn-dark btn-mail-footer">Sign Up</button>
+                    </div>
+                    <p class="text__validacion">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium assumenda maxime delectus dignissimos aut.
+                    </p>
+                </div>
+            </div>
+    
+            <hr class="row">
+    
+            <div class="footer2 row">
+    
+                <div class="footer2__grupo1 col-12 col-md-6">
+                    <i class="fa-brands fa-apple-pay"></i>
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-amex"></i>
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                </div>
+    
+                <div class="footer2__grupo2 col-12 col-md-6">
+                    <div class="social__contact">
+                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <p>&copy; 2024 Sarah Glass Ceramics. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
