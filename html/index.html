@@ -43,8 +43,12 @@
     -->
 </head>
 
-<body>
+<body class="">
     <header class="header">
+        <button class="theme-dark" id="theme-dark">
+            <img src="/img/dark_mode.svg" class="dark_mode" id="dark_mode" alt="">
+            <img src="/img/light_mode.svg" class="light_mode" id="light_mode" alt="">
+        </button>
 
         <div class="container">
             <nav class="nav row">
@@ -52,7 +56,7 @@
                 <!-- logo empresa  -->
 
                 <div class="container__logo col-6 col-md-3">
-                    <a href="index.html"><img src="/img/Logo.jpg" alt="" id="logo"></a>
+                    <a href="index.html"><img src="/img/logo_tarea_SARAH_GLASS.png" alt="" class="logo" id="logo"></a>
                 </div>
 
                 <!-- navbar desktop  -->
@@ -85,9 +89,7 @@
         <!-- SECTION SLIDER-HERO -->
 
         <div class="container-heroSlider">
-            <div class="probandoSlider">
                 <div class="container__slider">
-    
                     <div class="slider" id="slider">
                         <div class="slider__section">
                             <img src="/img/fondoHero.jpg" alt="" class="slider__img">
@@ -103,8 +105,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-
             <div class="container container-txt">
                 <div class="row container__hero">
                     <section class="hero col-12 col-md-6">
@@ -139,61 +139,61 @@
                     </div>
     
                     <div class="row container__card">
-                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                        <div class="card myCard col-12 col-lg-3" style="max-width: 500px; height: 28em;">
                             <img src="/img/card1.jpg" class="card-img-top" style="height: 250px;object-fit: cover;"
                                 alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                     of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary btn-card">Go somewhere</a>
                             </div>
                         </div>
-                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                        <div class="card myCard col-12 col-lg-3" style="max-width: 500px; height: 28em;">
                             <img src="/img/card2.webp" class="img__card2" style="height: 250px;object-fit: cover;"
                                 alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                     of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary btn-card">Go somewhere</a>
                             </div>
                         </div>
-                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                        <div class="card myCard col-12 col-lg-3" style="max-width: 500px; height: 28em;">
                             <img src="/img/card6.jpg" class="card-img-top" style="height: 250px;object-fit: cover;"
                                 alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                     of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary btn-card">Go somewhere</a>
                             </div>
                         </div>
                     </div>
     
                     <div class="row container__card">
-                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                        <div class="card myCard col-12 col-lg-3" style="max-width: 500px; height: 28em;">
                             <img src="/img/card1.jpg" class="card-img-top" style="height: 250px;object-fit: cover;"
                                 alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                     of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary btn-card">Go somewhere</a>
                             </div>
                         </div>
-                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                        <div class="card myCard col-12 col-lg-3" style="max-width: 500px; height: 28em;">
                             <img src="/img/card2.webp" class="img__card2" style="height: 250px;object-fit: cover;"
                                 alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                     of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary btn-card">Go somewhere</a>
                             </div>
                         </div>
-                        <div class="card col-12 col-lg-3" style="max-width: 500px; height: 28em;">
+                        <div class="card myCard col-12 col-lg-3" style="max-width: 500px; height: 28em;">
                             <img src="/img/card6.jpg" class="card-img-top" style="height: 250px;object-fit: cover;"
                                 alt="...">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                     of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary btn-card">Go somewhere</a>
                             </div>
                         </div>
                     </div>
@@ -203,22 +203,22 @@
 
         <section class="">
             <div class="container mt-5 container__contact">
-                <h1 class="text-center">Formulario de Contacto</h1>
+                <h3 class="text-center">Formulario de Contacto</h3>
                 <form>
                     <div class="form-group">
-                        <label for="name">Nombre</label>
+                        <label for="name"></label>
                         <input type="text" class="form-control" id="name" placeholder="Ingresa tu nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Correo Electrónico</label>
+                        <label for="email"></label>
                         <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Mensaje</label>
+                        <label for="message"></label>
                         <textarea class="form-control" id="message" rows="4" placeholder="Escribe tu mensaje aquí"
                             required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    <button type="submit" class="btn btn-primary btn-block mt-4 btn-card">Enviar</button>
                 </form>
             </div>
         </section>
@@ -274,7 +274,7 @@
         </div>
     </footer>
 
-    <script src="/js/js.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
