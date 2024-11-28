@@ -1,10 +1,7 @@
 :root {
     --base-variant: #121212;
     --color-hover: #745747;
-    /* --color-3: #FFF3E6; */
     --base-color: #F2EDE4;
-    /* --color-5: #BBB9AF; */
-    /* --color-6: #E6E0D4; */
     --font-color: #000000;
     --color-back: #fff;
     --font-family-primary: 'tinos';
@@ -65,13 +62,6 @@ header {
 }
 
 /* navbar - RESPONSIVE */
-
-.container__btnResponsive {
-    display: grid;
-    place-content: center;
-    position: relative;
-    top: 2.5px;
-}
 
 .btn__headerResponsive {
     border: none;
@@ -190,6 +180,13 @@ width: 100%;
 
 .myCard {
     background-color: var(--color-dark-background-card);
+    transition: .8s;
+    box-shadow: 2px 5px 20px #0000009f;
+}
+
+.myCard:hover {
+    scale: 1.1;
+    transition: .5s;
 }
 
 .card-text {
@@ -393,3 +390,4 @@ footer {
         right: 40px;
     }
 }
+
